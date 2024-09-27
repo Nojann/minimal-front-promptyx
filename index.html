@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test des Routes API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Test des Routes API</h1>
+  <p>Cliquez sur le bouton pour tester les routes API pour les prompts et les exécutions.</p>
+
+
+  <ul>
+    <li>
+      <button id="btn-get-prompts">GET /api/prompts</button>
+      <p id="result-get-prompts"></p>
+    </li>
+
+    <li>
+      <div class="input-group">
+        <input type="text" id="input-post-name" placeholder="Nom" class="elegant-input">
+        <input type="text" id="input-post-prompts" placeholder="Prompt" class="elegant-input">
+      </div>
+      <button id="btn-post-prompts">POST /api/prompts</button>
+      <p id="result-post-prompts"></p>
+    </li>
+    <li>
+      <button id="btn-get-prompts-id">GET /api/prompts/:id</button>
+      <p id="result-get-prompts-id"></p>
+    </li>
+    <li>
+      <button id="btn-put-prompts-id">PUT /api/prompts/:id</button>
+      <p id="result-put-prompts-id"></p>
+    </li>
+    <li>
+      <button id="btn-delete-prompts-id">DELETE /api/prompts/:id</button>
+      <p id="result-delete-prompts-id"></p>
+    </li>
+    <li>
+      <div class="input-group">
+        <input type="text" id="input-prompt-id" placeholder="ID du prompt" class="elegant-input">
+        <input type="text" id="input-document" placeholder="Document" class="elegant-input">
+        <!-- <input type="text" id="input-params" placeholder="Paramètres (JSON)" class="elegant-input"> -->
+      </div>
+      <button id="btn-post-executions">POST /api/executions</button>
+      <p id="result-post-executions"></p>
+    </li>
+    <li>
+      <button id="btn-get-executions-id">GET /api/executions/:id</button>
+      <p id="result-get-executions-id"></p>
+    </li>
+    <li>
+      <button id="btn-delete-executions-id">DELETE /api/executions/:id</button>
+      <p id="result-delete-executions-id"></p>
+    </li>
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
